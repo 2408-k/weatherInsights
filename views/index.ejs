@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Insights</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<!--local style sheet-->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!--local js-->
+
+	<script defer type="text/javascript" src="/script.js"></script>
+	<style type="text/css">
+		@media screen and (max-width: 750px)
+		{
+          .ipu{
+          	padding-left: 8%!important;
+          }
+          body{
+          	background-image: url('/bg.jpg');background-size: cover;
+          }
+          .headu{
+          	margin-top: 20%;
+          }
+          .boxu{
+          	margin-top:33%!important;
+          }
+
+		}
+		@media screen and (min-width: 751px){
+			.ipu{padding-left: 4%!important;}
+			 .infu{
+          	width: 50%!important;
+          	margin-left:27%!important; 
+          }
+          body{
+          	background-image: url('/bg.jpeg');background-size: cover;
+          }
+          .headu{
+          	margin-top: 5%;
+          }
+          .boxu{
+          	margin-top:13%!important;
+          }
+		}
+		
+	</style>
+</head>
+<body style="font-family: 'Roboto', sans-serif;">
+    <div class="container" >
+    	<h1 class="headu" style="text-align: center;">Weather Insights</h1>
+    	<div class="boxu" style="border-radius:10px!important;">
+    		
+    		<div class="row">
+               <div class="col-md-4"></div>
+               <div class=" col-12 col-md-6 ipu" >
+    			<input type="text" class="ipcity" placeholder="&nbsp;&nbsp;Enter a city..">
+    			<input type="submit" value="Submit" class="enter">
+    		</div>
+    			 <div class="col-md-2"></div>
+    		</div>
+
+    	</div>
+    	<br>
+    	<br>
+    	<div class="card infu" style="background-color: rgba(199, 197, 197,1);">
+    		<ul style="margin-top: 10px;">
+    		<li><p style="display: inline;">City: </p><p style="display: inline;" class="city"></p></li>
+    		<li><p style="display: inline;">Condition :</p><p style="display: inline;" class="desc"></p></li>
+    		<li><p style="display: inline;">Temperature: </p><p style="display: inline;" class="temp"></p><p style="display: inline;">°c</p></li>
+    	</ul>
+    	</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>
